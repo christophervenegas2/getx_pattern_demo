@@ -1,0 +1,18 @@
+import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:getx_pattern_demo/app/modules/detail/detail_controller.dart';
+
+class DetailPage extends StatelessWidget {
+  const DetailPage({Key key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return GetBuilder<DetailController>(
+      init: DetailController(),
+      initState: (_) {},
+      builder: (_) {
+        return Scaffold();
+      },
+    );
+  }
+}
